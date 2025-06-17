@@ -1,0 +1,44 @@
+.filterContainer {
+  display: grid;
+  gap: 20px;
+  text-align: start;
+
+  .Filter {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      background-color: var(--theme-background-ultralight);
+      color: var(--theme-color-normal);
+      border: 1px solid var(--theme-background-normal);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      height: auto;
+    }
+  }
+  .buttons {
+    display: grid;
+    justify-self: center;
+    gap: 10px;
+    width: 250px;
+
+    .button {
+      background-color: var(--theme-color-normal);
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      min-height: 40px;
+      padding: 0 16px;
+      border: 1px solid var(--theme-color-normal);
+    }
+    .addRecord {
+      color: var(--theme-color-normal);
+      background-color: var(--theme-background-light);
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* Form styles */
+
+.form {
+  display: grid;
+  gap: 10px;
+  margin: auto;
+  background-color: var(--theme-background-ultralight);
+  padding: 20px;
+  text-align: start;
+  border: 1px solid var(--theme-background-normal);
+}
+
+.form label {
+  color: var(--theme-color-dark);
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.form input:where([type="text"], [type="number"], [type="date"]),
+.form select {
+  background-color: var(--theme-background-light);
+  color: var(--theme-color-normal);
+  border: 1px solid var(--theme-background-normal);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 255px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+}
+
+.form input[type="number"].error {
+  border: 1px solid maroon;
+  color: maroon;
+}
+
+.Btn {
+  display: block;
+  background-color: var(--theme-color-normal);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  min-height: 40px;
+  font-weight: bold;
+  width: 300px;
+  margin: auto;
+  border: 1px solid var(--theme-color-normal);
+  height: 40px;
+
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+}
+
+.closeBtn {
+  color: var(--theme-color-normal);
+  background-color: var(--theme-background-light);
+}
+
+@media (min-width: 768px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
